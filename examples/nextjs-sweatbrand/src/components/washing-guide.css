@@ -1,0 +1,339 @@
+/* Washing-specific sections reuse the size guide's editorial layout. */
+.wg-hero-image {
+  background: var(--sg-paper);
+}
+.wg-hero-image img {
+  object-fit: contain;
+  object-position: center;
+  padding: 16px 32px 44px;
+}
+.wg-hero-image::after {
+  display: none;
+}
+.wg-image-caption {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  right: 24px;
+  text-align: center;
+  font-size: 8px;
+  color: var(--sg-muted);
+}
+.wg-section {
+  padding-top: 60px;
+  scroll-margin-top: 24px;
+}
+.wg-habits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+}
+.wg-habit-drawing {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 172px;
+  background: var(--sg-paper);
+}
+.wg-habits article:nth-child(2) .wg-habit-drawing {
+  background: var(--sg-blue);
+}
+.wg-habit-drawing > .eyebrow {
+  position: absolute;
+  left: 20px;
+  top: 16px;
+  font-size: 9px;
+  color: var(--sg-muted);
+}
+.wg-habit-drawing > svg {
+  height: 116px;
+  width: 116px;
+}
+.wg-habits h3 {
+  font-size: 17px;
+  font-weight: 550;
+  letter-spacing: -0.3px;
+  margin: 20px 0 10px;
+}
+.wg-habits p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 0;
+  max-width: 340px;
+}
+.wg-label-reminder {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--line);
+  margin: 24px 0 0;
+}
+.wg-label-reminder > svg {
+  flex-shrink: 0;
+}
+.wg-care-selector {
+  display: flex;
+  gap: 28px;
+  margin-top: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.wg-care-selector button {
+  position: relative;
+  background: none;
+  border: 0;
+  padding: 16px 0 20px;
+  color: var(--sg-muted);
+  font-size: 12px;
+}
+.wg-care-selector button:hover {
+  color: var(--ink);
+}
+.wg-care-selector [aria-pressed="true"] {
+  color: var(--ink);
+  font-weight: 650;
+}
+.wg-care-selector [aria-pressed="true"]::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--ink);
+}
+.wg-care-content {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  min-height: 352px;
+  background: var(--sg-paper);
+  margin-top: 24px;
+}
+.wg-care-intro {
+  padding: 36px;
+  border-right: 1px solid var(--line);
+}
+.wg-care-intro > .eyebrow {
+  color: var(--sg-muted);
+  font-size: 9px;
+}
+.wg-care-intro > h3 {
+  font-family: var(--font-display), Impact, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.25;
+  margin: 20px 0 16px;
+  max-width: 320px;
+}
+.wg-care-intro > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 0;
+  max-width: 340px;
+}
+.wg-care-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+.wg-care-tip > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.wg-care-tip p {
+  font-size: 11px;
+  line-height: 1.9;
+  margin: 0;
+}
+.wg-care-steps {
+  padding: 12px 36px;
+  margin: 0;
+}
+.wg-care-steps > div {
+  padding-block: 24px;
+}
+.wg-care-steps > div + div {
+  border-top: 1px solid var(--line);
+}
+.wg-care-steps dt {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.wg-care-steps dt > span {
+  font-family: var(--font-geist-mono), monospace;
+  color: var(--sg-muted);
+  font-size: 9px;
+  font-weight: 400;
+}
+.wg-care-steps dd {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 12px 0 0 27px;
+  max-width: 420px;
+}
+.wg-label-notes {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 48px;
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+}
+.wg-label-notes article {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding-block: 28px;
+  border-bottom: 1px solid var(--line);
+}
+.wg-label-mark {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  min-height: 72px;
+  flex-shrink: 0;
+  background: var(--sg-blue);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 28px;
+  letter-spacing: -2px;
+}
+.wg-label-notes h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin: 2px 0 8px;
+}
+.wg-label-notes p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 0;
+  max-width: 370px;
+}
+.wg-symbol-reference {
+  margin-top: 20px;
+  font-size: 9px;
+}
+.wg-sources {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  font-size: 10px;
+  color: var(--sg-muted);
+  margin: 24px 0 0;
+}
+.wg-sources a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.wg-sources a:hover {
+  color: var(--ink);
+}
+@media (max-width: 1000px) {
+  .wg-care-intro {
+    padding: 28px;
+  }
+  .wg-care-steps {
+    padding-inline: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .wg-hero-image {
+    min-height: 280px;
+  }
+  .wg-hero-image img {
+    padding: 12px 24px 40px;
+  }
+  .wg-section {
+    padding-top: 40px;
+  }
+  .wg-habits {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-top: 24px;
+  }
+  .wg-habits article {
+    display: grid;
+    grid-template-columns: 36% minmax(0, 1fr);
+    column-gap: 20px;
+  }
+  .wg-habit-drawing {
+    grid-row: span 2;
+    min-height: 156px;
+    height: 100%;
+  }
+  .wg-habit-drawing > svg {
+    width: 90px;
+    height: 90px;
+  }
+  .wg-habit-drawing > .eyebrow {
+    left: 12px;
+    top: 12px;
+    font-size: 8px;
+  }
+  .wg-habits h3 {
+    margin: 4px 0 8px;
+    font-size: 15px;
+    align-self: end;
+  }
+  .wg-habits p {
+    font-size: 11px;
+  }
+  .wg-care-selector {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  .wg-care-selector button {
+    font-size: 11px;
+    line-height: 1.7;
+  }
+  .wg-care-content {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .wg-care-intro {
+    border-right: 0;
+    padding: 24px;
+  }
+  .wg-care-intro > h3 {
+    font-size: 28px;
+    margin-top: 16px;
+  }
+  .wg-care-steps {
+    padding: 0 24px 4px;
+  }
+  .wg-care-steps > div:first-child {
+    border-top: 1px solid var(--line);
+  }
+  .wg-label-notes {
+    grid-template-columns: 1fr;
+    margin-top: 24px;
+  }
+  .wg-label-notes article {
+    gap: 20px;
+    padding-block: 24px;
+  }
+  .wg-label-mark {
+    width: 60px;
+    min-height: 64px;
+    font-size: 24px;
+  }
+  .wg-symbol-reference {
+    font-size: 8px;
+    gap: 12px;
+    line-height: 1.7;
+  }
+}

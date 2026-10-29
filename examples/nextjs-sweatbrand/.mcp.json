@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quickbutik": {
+      "type": "http",
+      "url": "https://mcp.quickbutik.com/mcp"
+    }
+  }
+}

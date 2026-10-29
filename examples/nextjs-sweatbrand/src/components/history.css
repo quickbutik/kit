@@ -1,0 +1,354 @@
+.history-intro {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  align-items: end;
+  gap: 64px;
+  margin: 40px 0 36px;
+}
+.history-intro > div > .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  margin: 0 0 24px;
+}
+.history-intro h1 {
+  font-family: var(--font-display), Impact, sans-serif;
+  font-weight: 400;
+  font-size: clamp(52px, 6.1vw, 88px);
+  letter-spacing: -1.3px;
+  line-height: 1.06;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+.history-intro-copy {
+  padding-bottom: 4px;
+}
+.history-intro-copy > p:first-child {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: -0.4px;
+  color: var(--ink);
+  max-width: 410px;
+}
+.history-intro-copy > p {
+  color: var(--sg-muted);
+  font-size: 12px;
+  line-height: 1.9;
+  max-width: 390px;
+  margin: 0 0 20px;
+}
+.history-intro-copy .sg-text-link {
+  margin-top: 4px;
+}
+.history-cover {
+  position: relative;
+  height: clamp(360px, 34vw, 480px);
+  margin: 0;
+  overflow: hidden;
+  background: var(--brand);
+}
+.history-cover > img {
+  object-fit: cover;
+  object-position: 68% center;
+}
+.history-cover::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    color-mix(in oklab, var(--brand) 50%, transparent),
+    transparent 65%
+  );
+  pointer-events: none;
+}
+.history-cover figcaption {
+  position: absolute;
+  z-index: 1;
+  inset: 36px 40px;
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.history-cover figcaption > .eyebrow {
+  font-size: 8px;
+}
+.history-cover h2 {
+  font-size: clamp(32px, 4.2vw, 60px);
+  line-height: 1.12;
+  letter-spacing: -0.7px;
+  margin: 20px 0;
+  max-width: 50%;
+}
+.history-cover-footnote {
+  font-size: 10px;
+}
+.history-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-block: 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 8px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: var(--sg-muted);
+}
+.history-idea {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 80px;
+  padding: 64px 0 56px;
+  scroll-margin-top: 24px;
+}
+.history-idea h2 {
+  font-size: clamp(36px, 4vw, 56px);
+}
+.history-prose {
+  max-width: 560px;
+}
+.history-prose p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 0 0 20px;
+}
+.history-prose p:last-child {
+  margin-bottom: 0;
+}
+.history-prose .history-lead {
+  color: var(--ink);
+  font-size: 22px;
+  line-height: 1.6;
+  letter-spacing: -0.5px;
+}
+.history-chapters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+  padding: 32px 0 56px;
+  border-top: 1px solid var(--line);
+}
+.history-chapter-index {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--sg-muted);
+}
+.history-chapter-index > span:first-child {
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 10px;
+}
+.history-chapter-index .eyebrow {
+  font-size: 8px;
+}
+.history-chapters h3 {
+  font-size: 19px;
+  line-height: 1.5;
+  font-weight: 550;
+  letter-spacing: -0.4px;
+  margin: 20px 0 12px;
+}
+.history-chapters p {
+  color: var(--sg-muted);
+  font-size: 12px;
+  line-height: 1.9;
+  margin: 0;
+  max-width: 350px;
+}
+.history-chapters .sg-text-link {
+  font-size: 8px;
+  margin-top: 16px;
+  gap: 20px;
+}
+.history-everyday {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--sg-blue);
+}
+.history-everyday-photo {
+  position: relative;
+  min-height: 460px;
+}
+.history-everyday-photo img {
+  object-fit: cover;
+  object-position: 50% 35%;
+}
+.history-everyday-copy {
+  align-self: center;
+  padding: 48px;
+}
+.history-everyday-copy > .eyebrow {
+  color: var(--sg-muted);
+  font-size: 8px;
+  margin: 0 0 20px;
+}
+.history-everyday-copy h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+  margin: 0 0 24px;
+}
+.history-everyday-copy p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  max-width: 360px;
+  margin: 0 0 20px;
+}
+.history-everyday-copy .sg-text-link {
+  font-size: 9px;
+}
+.history-concept {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 32px 0;
+  margin-block: 32px;
+  border-block: 1px solid var(--line);
+}
+.history-concept-mark {
+  display: block;
+  width: 180px;
+  flex-shrink: 0;
+}
+.history-concept-mark > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.history-concept h2 {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin: 0 0 8px;
+}
+.history-concept p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--sg-muted);
+  margin: 0;
+  max-width: 640px;
+}
+@media (max-width: 1000px) {
+  .history-intro {
+    gap: 40px;
+  }
+  .history-intro h1 {
+    font-size: 64px;
+  }
+  .history-idea {
+    gap: 40px;
+  }
+  .history-everyday-copy {
+    padding: 32px;
+  }
+  .history-chapters {
+    gap: 28px;
+  }
+}
+@media (max-width: 700px) {
+  .history-intro {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin: 32px 0 28px;
+  }
+  .history-intro h1 {
+    font-size: clamp(44px, 10.8vw, 72px);
+    letter-spacing: -0.8px;
+  }
+  .history-intro > div > .eyebrow {
+    margin-bottom: 20px;
+  }
+  .history-intro-copy > p:first-child {
+    font-size: 17px;
+  }
+  .history-intro-copy > p {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+  .history-cover {
+    height: 400px;
+  }
+  .history-cover > img {
+    object-position: 68% center;
+  }
+  .history-cover::after {
+    background: linear-gradient(
+      transparent 30%,
+      color-mix(in oklab, var(--brand) 82%, transparent)
+    );
+  }
+  .history-cover figcaption {
+    inset: 24px;
+  }
+  .history-cover h2 {
+    font-size: 36px;
+    max-width: 100%;
+    margin: auto 0 16px;
+  }
+  .history-cover-footnote {
+    font-size: 9px;
+  }
+  .history-caption {
+    gap: 12px;
+    font-size: 7px;
+    letter-spacing: 0.6px;
+  }
+  .history-idea {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 40px 0 32px;
+  }
+  .history-idea h2 {
+    font-size: 36px;
+  }
+  .history-prose .history-lead {
+    font-size: 20px;
+  }
+  .history-prose p {
+    font-size: 12px;
+  }
+  .history-chapters {
+    grid-template-columns: 1fr;
+    padding: 28px 0 40px;
+    gap: 28px;
+  }
+  .history-chapters article + article {
+    padding-top: 28px;
+    border-top: 1px solid var(--line);
+  }
+  .history-chapters h3 {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .history-chapters p {
+    max-width: 440px;
+  }
+  .history-everyday {
+    grid-template-columns: 1fr;
+  }
+  .history-everyday-photo {
+    min-height: 320px;
+  }
+  .history-everyday-copy {
+    padding: 32px 24px;
+  }
+  .history-everyday-copy h2 {
+    font-size: 32px;
+  }
+  .history-concept {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-block: 24px;
+    margin-block: 28px;
+  }
+  .history-concept-mark {
+    width: 158px;
+  }
+}
